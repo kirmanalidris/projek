@@ -1,5 +1,74 @@
+  $(document).on('click', '.send_form', function() {
+    var kirman_verifikasi = document.getElementById('kirman_verifikiasi');
+
+    /* Whatsapp Settings */
+    var kirman_wa_url = 'https://web.whatsapp.com/send',
+    phone = kirman_wa_telpon,
+    kirman_wa_url2 = 'Halo kak, saya ingin membeli produk 🎉🎉',
+    text_yes = 'Terkirim.',
+    text_no = 'Isi semua Formulir lalu klik Send.';
+
+    /* Smartphone Support */
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      var kirman_wa_url = 'whatsapp://send';
+    }
+
+    if ("" != kirman_verifikasi.value) {
+
+      /* Call Input Form */
+      var
+      kirman_harga_txt = $("div.harga .woocommerce-Price-amount.amount").text(),
+      kirman_nama_produk = $("#produk_judul").text(),
+      kirman_id_produk = $("#kirman_id_produk").text(),
+      kirman_nama = $("#kirman_nama").val(),
+      kirman_nomer = $("#kirman_nomer").val(),
+      kirman_email = $("#kirman_email").val(),
+      kirman_alamat = $("#kirman_alamat").val(),
+      kirman_kecamatan = $("#kirman_kecamatan").val(),
+      kirman_kabupaten = $("#kirman_kabupaten").val(),
+      kirman_provinsi = $("#kirman_provinsi").val(),
+      kirman_pos = $("#kirman_pos").val();
+      /* Final Whatsapp URL */
+      var kirman_whatsapp = kirman_wa_url + '?phone=' + phone + '&text=' + kirman_wa_url2 + '%0A%0A' +
+      
+      '==========================' + '%0A' + 
+      'Detail produk' + '%0A' + 
+      '==========================' + '%0A' + 
+      'https://projek.kirmanalidris.com' + '%0A' +
+      '*Nama produk*: ' + kirman_nama_produk + '%0A' +
+      '*ID produk* :' + kirman_id_produk + '%0A' +
+      '*Harga* : ' + kirman_harga_txt + '%0A' +
+      
+     
+      '==========================' + '%0A' + 
+      'Alamat pengiriman' + '%0A' + 
+      '==========================' + '%0A' + 
+      '*Name* : ' + kirman_nama + '%0A' +
+      '*Nomer* : ' + kirman_nomer + '%0A' +
+      '*Email* : ' + kirman_email + '%0A' +
+      '*Alamat* : ' + kirman_alamat + '%0A' +
+      '*Kecamatan* : ' + kirman_kecamatan + '%0A' +
+      '*Kabupaten* : ' + kirman_kabupaten + '%0A' +
+      '*Provinsi* : ' + kirman_provinsi + '%0A' +
+      '*Kode pos* : ' + kirman_pos + '%0A' +
+      '==========================' + '%0A';
+      /* Whatsapp Window Open */
+      window.open(kirman_whatsapp, '_blank');
+      document.getElementById("text-info").innerHTML = '<span class="yes">'+text_yes+'</span>';
+    }
+  });
+
+
+
 
 $(document).ready(function() {
+$(".buy_to_wa").click(function(){
+  $(".to_wa_deatil_con").fadeIn()
+});
+$(".buy_close").click(function(){
+  $(".to_wa_deatil_con").fadeOut()
+});
+
 $(".kirman_kategori").slideUp()
 $(".kirman_btn_kategori").click(function() {
 $(".kirman_kategori").slideToggle()
@@ -81,12 +150,14 @@ if ("" != input_kirman.value) {
 
 /* Call Input Form */
 var
+jalur = $("#jalur").text(),
 input_name1 = $("#wa_name").val(),
 input_email1 = $("#wa_email").val(),
 input_textarea1 = $("#wa_textarea").val();
 
 /* Final Whatsapp URL */
 var kirman_whatsapp = walink + '?phone=' + phone + '&text=' + walink2 + '%0A%0A' +
+'*Melalui* :' + jalur + '%0A' +
 '*Name* : ' + input_name1 + '%0A' +
 '*Email Address* : ' + input_email1 + '%0A' +
 '*Pesan Singkat* : ' + input_textarea1 + '%0A';
@@ -110,7 +181,7 @@ $(".produk_popular_target").appendTo(".produk_popular_target_1");
 //Pindahkan flash deal ke function
 $(".flash_deal").appendTo(".kirman_flash_deal_target");
 //Chat WhatsApp onclick
-$("#chat_me, #chat_me1").click(function() {
+$("#chat_me, #chat_me1, .tanya_saya_bro").click(function() {
 $(".wa_wrap").fadeIn()
 $(".overlay").fadeIn()
 });
