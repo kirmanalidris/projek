@@ -440,8 +440,10 @@
   .footer_con{
     background: #eee;
     padding-bottom: 50px;
+    color: inherit;
   }
   .kirman_footer {
+    color: inherit;
     margin: auto;
     max-width: 1024px;
     margin-top: 40px;
@@ -464,7 +466,6 @@
     color: inherit;
     text-decoration: none;
     font-size: 14px;
-    color: gray;
   }
   .kirman_footer h2 {
     font-size: 18px;
