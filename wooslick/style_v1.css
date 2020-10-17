@@ -1687,3 +1687,229 @@
     font-weight: 400;
   }
   html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:0.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:0.35em 0.75em 0.625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 transparent;
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 5px #C0D8E8;
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 #C0D8E8;
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 transparent;
+    box-shadow: 0 0 0 0 transparent;
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 5px #C0D8E8;
+      box-shadow: 0 0 0 5px #C0D8E8;
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 #C0D8E8;
+      box-shadow: 0 0 0 0 #C0D8E8;
+  }
+}
+.kirman_nightmode .btn_home{
+  background: var(--night-primary);
+}
+.kirman_nightmode .kirman_wa_chat{
+  background: var(--night-primary);
+}
+.kirman_nightmode .chat_bot{
+  background: var(--night-secondary);
+}
+.kirman_nightmode .wa_footer{
+  background: var(--night-secondary);
+}
+.kirman_nightmode .btn_notif{
+  background: var(--night-primary);
+}
+.kirman_nightmode  #chat_me svg{
+  fill: var(--night-primary);
+}
+.kirman_nightmode .flash_deal{
+  background: var(--night-primary);
+}
+.kirman_nightmode .kirman_categ a.lihat{
+  background: var(--night-primary);
+}
+.kirman_nightmode .kirman_footer{
+  background: var(--night-primary);
+}
+.kirman_nightmode .widget_title .bulat{
+  background: var(--night-primary);
+}
+.kirman_nightmode .widget_title div{
+  background: var(--night-primary);
+}
+.kirman_nightmode .kirman_sidenav{
+  background: var(--night-primary);
+}
+.kirman_nightmode .woocommerce-ordering .orderby{
+  background: var(--night-primary);
+}
+.kirman_nightmode .kirman_time_count_down{
+  background: var(--night-secondary);
+}
+.kirman_nightmode .kirman_round{
+  background: var(--night-primary);
+}
+
+
+
+.kirman_detail_prod{
+  display: flex;
+  margin-top: 10px;
+  
+}
+#text-info{
+  display: none;
+}
+.kirman_detail_prod img{
+  border-radius: 10px;
+  width: 120px;
+  height: 120px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.07);
+  border:1px solid rgba(0,0,0,0.07);
+  
+}
+.detail_text{
+  margin-left: 15px;
+}
+.detail_text h1{
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+.detail_text span, .detail_text b{
+  font-size: 12px;
+}
+div.harga .woocommerce-Price-amount.amount,
+div.harga .woocommerce-Price-currencySymbol{
+  color: rgba(255,37,0);
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+.to_wa_deatil_con{
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  max-width: 500px;
+  bottom: 0;
+  z-index: 9999;
+  background: #fff;
+  display: none;
+  overflow: scroll;
+}
+.kirman_buy_wa{
+  padding: 0;
+  max-width: 500px;
+  box-sizing: border-box;
+  clear: both;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+.kirman_wa_foooo{
+  padding: 20px;
+  position: relative;
+  margin-top: 40px;
+ }
+ .kirman_wa_foooo a span{
+   margin-right: 5px;
+   margin-left: 5px;
+   padding: 10px;
+   background: #00bd00;
+   border-radius: 5px;
+   outline: none;
+   color: #fff;
+ }
+.kirman_input_con{
+  width: calc(100% / 2 - 22px);
+  float: left;
+  margin: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(0,0,0,0.10);
+}
+.kirman_input_con input{
+  outline: none;
+  border: none;
+  max-width: 500px;
+  padding: 10px;
+  font-size: 12px;
+}
+.kirman_input_con i{
+  padding: 10px;
+  font-size: 16px;
+ 
+}
+
+
+.to_wa_deatil{
+  max-width: 600px;
+  position: relative;
+
+  .kirman_buy_wa_con_con {
+    position: fixed;
+    bottom: 0;
+    max-width: 500px;
+    right: 0;
+    left: 0;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.10);
+  }
+  .kirman_buy_wa_con {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  .kirman_to_cart i {
+    color: var(--whatsapp);
+    background:;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: 1px solid rgba(0,0,0,0.10);
+  }
+  .tanya_saya_bro {
+    display: flex;
+    align-items: center;
+    background:;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px;
+    margin-left: 10px;
+    border: 1px solid rgba(0,0,0,0.10);
+  }
+  .tanya_saya_bro i {
+    font-size: 14px;
+    color: var(--whatsapp);
+    margin-right: 10px;
+  }
+  .buy_to_wa {
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 18px;
+    background: var(--primary);
+    border: 1px solid rgba(0,0,0,0.10);
+    position: absolute;
+    color: #fff;
+    right: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+  }
