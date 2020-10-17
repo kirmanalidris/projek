@@ -3529,6 +3529,19 @@ template {
 .kirman_nightmode .kirman_round{
   background: var(--night-primary);
 }
+.kirman_nightmode .kirman_buy_wa_con_con{
+  background: var(--night-primary);
+  color: #fff;
+}
+.kirman_nightmode .kirman_buy_wa_con_con i{
+  color: #fff;
+}
+.kirman_nightmode .tanya_saya_bro{
+  background: var(--night-secondary);
+}
+.kirman_nightmode .buy_to_wa{
+  background: var(--night-secondary);
+}
 
 
 
@@ -3630,7 +3643,7 @@ div.harga .woocommerce-Price-currencySymbol{
 .to_wa_deatil{
   max-width: 600px;
   position: relative;
-
+}
   .kirman_buy_wa_con_con {
     position: fixed;
     bottom: 0;
